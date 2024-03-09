@@ -1,6 +1,10 @@
 import classnames from 'classnames';
 import { ButtonHTMLAttributes, FunctionComponent } from 'react';
 
+import './Button.scss';
+
+export const ButtonStyling = ['default', 'destructive'] as const;
+
 export interface ButtonProps {
     /**
      * Additional attributes to support BUTTON tag attributes - type
@@ -18,7 +22,7 @@ export interface ButtonProps {
     /**
      * Combined styling applied to component
      */
-    styling?: 'default' | 'detructive';
+    styling?: (typeof ButtonStyling)[number];
     /**
      * Text to show inside the button
      */
