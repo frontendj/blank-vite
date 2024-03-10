@@ -6,4 +6,6 @@ Boilerplate for pet projects
 -   Eslint
 -   Stylelint
 -   Prettier
--   Nanostores
+-   Nanostores + Redux (we don't need both but we can start with any)
+-   Playwright
+-   Storybook
