@@ -5844,7 +5844,6 @@ __metadata:
     eslint-plugin-react: "npm:^7.31.8"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-storybook: "npm:^0.8.0"
-    geojson: "npm:^0.5.0"
     nanostores: "npm:^0.9.5"
     postcss-scss: "npm:^4.0.9"
     prettier: "npm:^3.1.0"
@@ -7461,13 +7460,6 @@ __metadata:
   version: 1.0.0-beta.2
   resolution: "gensync@npm:1.0.0-beta.2"
   checksum: 10c0/782aba6cba65b1bb5af3b095d96249d20edbe8df32dbf4696fd49be2583faf676173bf4809386588828e4dd76a3354fcbeb577bab1c833ccd9fc4577f26103f8
-  languageName: node
-  linkType: hard
-
-"geojson@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "geojson@npm:0.5.0"
-  checksum: 10c0/d7fd376c201933dea1307b7c08032f249f73b9399d6287211f6a523d0efa9260caf2a38319f55075682d53dc4cb4c52b9f9c845f2fd03bef9832903f16177ab0
   languageName: node
   linkType: hard
 
