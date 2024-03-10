@@ -23,7 +23,9 @@
             "utils/*": ["src/utils/*"],
             "types/*": ["src/types/*"],
             "styles/*": ["src/styles/*"],
-            "store/*": ["src/store/*"]
+            "store/*": ["src/store/*"],
+            "actions/*": ["src/actions/*"],
+            "reducers/*": ["src/reducers/*"]
         }
     },
     "include": ["src"]

@@ -5,7 +5,9 @@ import { LayoutMain } from 'components/Layout/LayoutMain';
 import { HomeContainerErrorBoundary } from 'containers/home/container';
 import { StrictMode, createElement } from 'react';
 import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { store } from 'store/redux-store';
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -34,11 +36,13 @@ const Content = () => {
 const App = () => {
     return (
         <StrictMode>
-            <BrowserRouter>
-                <QueryClientProvider client={queryClient}>
-                    <Content />
-                </QueryClientProvider>
-            </BrowserRouter>
+            <Provider store={store}>
+                <BrowserRouter>
+                    <QueryClientProvider client={queryClient}>
+                        <Content />
+                    </QueryClientProvider>
+                </BrowserRouter>
+            </Provider>
         </StrictMode>
     );
 };
