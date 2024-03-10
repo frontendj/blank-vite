@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { expect, userEvent, within } from '@storybook/test';
 import { Button, ButtonStyling } from 'components/Button/Button';
 
 const meta = {
@@ -22,7 +23,17 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
         styling: 'default',
-        text: 'Button',
+        text: 'Yay',
+    },
+    // More on interaction testing: https://storybook.js.org/docs/writing-tests/interaction-testing
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+
+        const yayButton = canvas.getByRole('button', { name: /Yay/i });
+        await expect(yayButton).toBeInTheDocument();
+
+        const nayButton = canvas.queryByRole('button', { name: /Nay/i });
+        expect(nayButton).not.toBeInTheDocument();
     },
 };
 

@@ -8,5 +8,3 @@ export const increment = () => ({
 export const decrement = () => ({
     type: DECREMENT,
 });
-
-type ActionTypes = typeof DECREMENT | typeof INCREMENT;
