@@ -20,6 +20,8 @@ module.exports = {
         'plugin:storybook/recommended',
     ],
 
+    ignorePatterns: ['dist/'],
+
     overrides: [
         {
             // or whatever matches stories specified in .storybook/main.js
