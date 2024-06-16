@@ -1,6 +1,5 @@
 import { useStore } from '@nanostores/react';
 import { Button } from 'components/Button/Button';
-import { LayoutBlock } from 'components/Layout/LayoutBlock';
 import { useDispatch, useSelector } from 'react-redux';
 import ErrorBoundary from 'src/ErrorBoundary';
 import { $global, updateGlobal } from 'store/global';
@@ -25,7 +24,7 @@ const HomeContainer = () => {
     const dispatch = useDispatch();
 
     return (
-        <LayoutBlock align="stretch" isScrollable={true}>
+        <div>
             <p>hello world</p>
             <Button onClick={handleClick} text="Click me" />
             <p>
@@ -37,7 +36,7 @@ const HomeContainer = () => {
                 <Button onClick={() => dispatch(decrement())} text="-" />
                 {count}
             </div>
-        </LayoutBlock>
+        </div>
     );
 };
 
