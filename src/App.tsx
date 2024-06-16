@@ -21,8 +21,8 @@ const Content = () => {
             <main>
                 <h1>Demo app</h1>
                 <Routes>
-                    <Route element={<div>Hello</div>} path="/project-name/:id" />
-                    <Route element={<HomeContainerErrorBoundary />} path="/project-name/" />
+                    <Route element={<div>Hello</div>} path="/blank-vite/:id" />
+                    <Route element={<HomeContainerErrorBoundary />} path="/blank-vite/" />
                 </Routes>
             </main>
         </Layout>

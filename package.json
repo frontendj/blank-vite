@@ -1,9 +1,9 @@
 {
-  "name": "demo-app",
+  "name": "blank-vite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://frontendj.github.io/demo-app",
+  "homepage": "https://frontendj.github.io/blank-vite",
   "scripts": {
     "test": "npx playwright test",
     "test-report": "npx playwright show-report",
